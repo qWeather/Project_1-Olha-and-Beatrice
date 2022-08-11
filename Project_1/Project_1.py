@@ -57,7 +57,7 @@ while not (S == (2, 2) or O == (2, 2)):
             if S == O != board[0]:  # if Velma's position is the same as Shaggy's - press F for Shaggy
                 print("JEENKIES!1!Velma killed Shaggy. Brute!")
                 O = board[0]  # Shaggy is returning to safe place
-    else:  # executes if it's Shaggy's turn
+    else: # executes if it's Shaggy's turn
         if get_pos(O) == 6 and dice_val == 3:  # if Shaggy in position 6 and dice_val is 3 - skip the turn
             print("Shaggy skips the turn.")
         elif get_pos(O) == 7 and dice_val > 1:  # if Shaggy in position 7 and dice_val > 1 - skip the turn
@@ -67,7 +67,7 @@ while not (S == (2, 2) or O == (2, 2)):
             print("Shaggy moves from {}".format(get_pos(O)), "to {}".format(get_pos(next_position)))
             O = next_position  # assign new position to Shaggy
             if S == O != board[0]:  # if Shaggy's position is the same as Velma's - press F for Shaggy
-                print("JEENKIES!1!Shaggy killed Velma. Brute!")
+                print("ZOINKS!1!Shaggy killed Velma. Brute!")
                 S = board[0]  # Velma is returning to safe place
     next_turn = not next_turn  # change the turn
 
